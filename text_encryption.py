@@ -22,16 +22,16 @@ def encypher(text,language,step,act):
         if act == 'decod':
             if text[i] in curr:
                 for j in range(len(curr)):
-                    if 0<= j - step < len(curr) and text[i] == curr[j]:
+                    if 0 <= j - step < len(curr) and text[i] == curr[j]:
                         res.append(curr[j-step])
                     elif j - step < 0 and text[i] == curr[j]:
                         res.append(curr[(j-step)%len(curr)])
-        elif act == 'cod':
+        else:
             if text[i] in curr:
                 for j in range(len(curr)):
-                    if 0<= j + step < len(curr) and text[i] == curr[j]:
+                    if 0 <= j + step < len(curr) and text[i] == curr[j]:
                         res.append(curr[j+step])
-                    elif j + step > len(curr) and text[i] == curr[j]:
+                    elif j + step >= len(curr) and text[i] == curr[j]:
                         res.append(curr[(j+step)%len(curr)])
     
     return ''.join(res)

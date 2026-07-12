@@ -2,11 +2,13 @@
 
 ## Description
 
-A program for encrypting and decrypting text using the Caesar cipher algorithm.
-
-Supports English and Russian alphabets with a customizacle shift.
+A program for encrypting and decrypting text using the Caesar cipher algorithm. Supports English and Russian alphabets with a customizacle shift.
 
 ---
+
+## Demo
+
+![Caesar cypher preview](images/image.png)
 
 ## Features
 
@@ -26,35 +28,43 @@ Supports English and Russian alphabets with a customizacle shift.
 ---
 
 ## Project Structure
-``` bash
-Caesar_cypher/
+``` text
+Caesar-cypher/
 │
 ├── README.md
 ├── main.py
+├── LICENSE
 ├── text_encryption.py
 ├── utils.py
+├── images/
+│   └── image.png
 └── .gitignore
 ```
 ---
 
-## How to Run
+## Installation
 
 1. Clone the repository:
+
 ``` bash
 git clone git@github.com:ss29enter/Caesar-cypher.git
 ```
+
 2. Navigate to the project folder:
+
 ``` bash
-cd Caesar_cypher
+cd Caesar-cypher
 ```
+
 3. Run the program:
+
 ``` bash
 python main.py
 ```
 ---
 
-## Example
-``` bash
+## Usage
+``` text
 Enter the language [rus/eng]: eng
 Enter a step: 12
 Enter your message: Hello, World!
@@ -75,6 +85,17 @@ C → F
 
 ---
 
-## Author
+## What I Learned
 
-Created by ss29enter
+- Working with strings and character manipulation
+- Implementing encryption and decryption algorithms
+- Creating a custom alphabet system for different languages
+- Preserving letter case and handling special characters
+- Handling user input and edge cases
+- Structuring code using functions
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
